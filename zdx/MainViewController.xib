@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="fe3-zE-RbQ" id="C6H-aj-MK8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fe3-zE-RbQ">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fe3-zE-RbQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="60H-1k-UUF"/>
+                <constraint firstAttribute="trailing" secondItem="fe3-zE-RbQ" secondAttribute="trailing" id="WUH-U0-k4C"/>
+                <constraint firstAttribute="bottom" secondItem="fe3-zE-RbQ" secondAttribute="bottom" id="oT3-vg-oqD"/>
+                <constraint firstItem="fe3-zE-RbQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sVE-4e-KGl">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="fe3-zE-RbQ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="60H-1k-UUF"/>
+                    <exclude reference="WUH-U0-k4C"/>
+                    <exclude reference="oT3-vg-oqD"/>
+                    <exclude reference="sVE-4e-KGl"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="fe3-zE-RbQ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="60H-1k-UUF"/>
+                    <include reference="WUH-U0-k4C"/>
+                    <include reference="oT3-vg-oqD"/>
+                    <include reference="sVE-4e-KGl"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
